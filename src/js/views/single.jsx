@@ -10,13 +10,11 @@ export class Single extends React.Component {
 				<Context.Consumer>
 					{({ store }) => {
 						return (
-							<h1 className="display-4">
-								This will show the demo element:{" "}
-								{
-									store.demo[this.props.match.params.theid]
-										.title
-								}
-							</h1>
+							<h5 className="display-5">
+								TOKEN: {store.token.token}
+								<br />
+								STATUS: {store.status}
+							</h5>
 						);
 					}}
 				</Context.Consumer>

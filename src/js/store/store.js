@@ -4,6 +4,7 @@ const getState = scope => {
 			demo: [
 				{
 					title: "FIRST",
+					token: "",
 					background: "white",
 					initial: "white"
 				},
@@ -12,7 +13,9 @@ const getState = scope => {
 					background: "white",
 					initial: "white"
 				}
-			]
+			],
+			token: "",
+			status: ""
 		},
 		actions: {
 			changeColor: (element, color) => {
